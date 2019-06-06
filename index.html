@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/element-ui/lib/theme-chalk/index.css">
+  <title>test_spa_luntan</title>
+
+</head>
+<body>
+<div id="app"></div>
+<!--这里把第三方包的引入写到body尾标签前，不要写到body尾标签后，-->
+<!--因为那样的话，自动bundle会插入到第三方包后， 导致引入找不到-->
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="node_modules/vue-router/dist/vue-router.js"></script>
+<script src="node_modules/axios/dist/axios.js"></script>
+<script src="node_modules/lodash/lodash.js"></script>
+<script src="node_modules/element-ui/lib/index.js"></script>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
